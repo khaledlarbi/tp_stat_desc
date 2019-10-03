@@ -7,3 +7,4 @@ Il y a cinq séances de trois heures :
 * 16 octobre : analyse univariée sur une variable quantitative rapide puis présentation des formats ainsi qu'une analyse d'une variable qualitative.
 * 24 octobre : reporting avec ODS et analyse bivariée (quanti/quanti et quali/quali)
 * 5 novembre : import de fichier et analyse bivariée
+* 6 novembre : TP noté (j'échangerai avec vous directement par mail à ce sujet)
