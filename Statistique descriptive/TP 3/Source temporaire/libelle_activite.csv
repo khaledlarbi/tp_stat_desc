@@ -1,0 +1,164 @@
+Numero,Libelle
+0101,Bassin mixte de natation
+0102,Bassin sportif de natation
+0103,Bassin ludique de natation
+0104,Fosse à plongeon
+0105,Fosse à plongée
+0106,Bassin de réception de toboggan
+0201,Terrain de boules
+0202,Terrain de pétanque
+0203,Terrain de boules traditionnelles
+0301,Bowling
+0401,Circuit de vitesse
+0404,Circuit de motocross
+0405,Course sur piste
+0407,Terrain de trial
+0409,Piste de kart
+0410,Terrain de moto-ball
+0501,Court de tennis
+0601,Anneau / piste de cyclisme
+0603,Espace trial
+0604,Piste de bicross
+0605,Piste de descente
+0606,Relais rando-vélo
+0607,Vélodrome
+0608,Terrain de cyclocross
+0609,Terrain de polo-vélo
+0701,Domaine de ski alpin
+0703,Tremplin à ski
+0704,Piste de ski indoor
+0705,Domaine nordique
+0706,Piste de luge
+0801,Salle de cours collectifs
+0802,Salle de musculation/cardiotraining
+0803,Bassin d'exercices aquatiques
+0901,Carrière
+0902,Carrière de dressage/rond de longe
+0903,Manège
+0904,Parcours d'obstacle
+0905,Piste de course sur le plat
+0906,Structure de tourisme équestre
+0907,Terrain de horse-ball
+0908,Terrain de polo
+0909,Parcours de cross
+1001,Stade d’athlétisme
+1002,Aire de lancer
+1003,Aire de saut
+1004,Piste d'athlétisme isolée
+1101,Mur ou fronton mixte
+1102,Mur à gauche
+1103,Fronton place libre
+1104,Trinquet
+1105,Mur de tennis
+1106,Jaï-Laï
+1201,Parcours d'initiation
+1202,Parcours 18 trous
+1204,Parcours 9 trous
+1205,Practice
+1206,Swingolf
+1301,Parcours sportif/santé
+1401,Pas de tir à l'arc
+1402,Pas de tir à la cible
+1403,Pas de tir aux plateaux
+1501,Aire de sports de glace sportive
+1503,Aire de sports de glace ludique
+1504,Anneau de vitesse
+1505,Piste de bobsleigh
+1506,Salle de curling
+1601,Plaine de jeux
+1701,Plateau EPS/Multisports/city-stades
+1702,But/panier isolé de sport collectif
+1801,Dojo / Salle d'arts martiaux
+1802,Salle de boxe
+1901,Salle multisports
+2101,Salle de basket
+2102,Salle de beach-volley
+2103,Salle de billard
+2104,Salle de culturisme
+2105,Salle de danse
+2106,Salle de gymnastique sportive
+2107,Salle de handball
+2108,Salle de lutte
+2109,Salle de patinage sur roulette
+2110,Salle de raquetball
+2111,Salle de tennis de table
+2112,Salle de trampoline
+2113,Salle de volley ball
+2114,Salle d'échecs
+2115,Salle d'escrime
+2116,Salle d'haltérophilie
+2117,Salle ou terrain de squash
+2118,Terrain de paddle
+2119,Salle ou terrain de badminton
+2123,Terrain de quilles
+2124,Terrain de balle au tambourin
+2125,Salle ou terrain de paintball
+2126,Salle ou terrain de jorkyball
+2127,Terrain de ballon au poing/long paume
+2128,Terrain de soccer
+2201,Salles polyvalentes / des fêtes / non spécialisées
+2301,Aire mixte (décollage et atterissage)
+2302,Aire de décollage
+2303,Aire d'atterrissage
+2304,Piste d’aérodrome / d'aéroport
+2305,Site d'aérostation
+2306,Piste ULM
+2307,Site de glisse aérotractée
+2401,Site d'activités aquatiques et nautiques
+2402,Baignade aménagée
+2403,Circuit de motonautisme
+2404,Stade de ski nautique
+2405,Stade d’eau vive
+2406,Stade d’aviron
+2407,Stade de canoë-kayak de vitesse
+2408,Stade mixte
+2409,Terrain de kayak polo
+2410,Point d'embarquement et de débarquement isolé
+2414,Site de plongée
+2415,Tank à ramer
+2416,Téléski nautique
+2417,Port de plaisance
+2418,Zone de mouillage
+2419,Dispositif de franchissement
+2420,Site de pêche
+2501,Site de modélisme automobile
+2502,Site de voile radio commandée
+2503,Site d'aéromodélisme
+2504,Site de modèle réduit (motonautisme)
+2601,Anneau de Roller
+2602,Espace de vélo-freestyle
+2603,Skate park
+2701,Structure Artificielle d'Escalade
+2702,Salle de blocs artificiels d'escalade
+2801,Terrain mixte
+2802,Terrain de football
+2803,Terrain de rugby
+2804,Terrain de football américain
+2805,Terrain de rugby à XIII
+2806,Terrain de baseball /softball
+2808,Terrain de cricket
+2809,Terrain de hockey sur gazon
+2901,Terrain de basket-ball
+2902,Terrain de beach-volley
+2903,Terrain de handball
+2904,Terrain de volley-ball
+3001,Canyon
+3002,Equipement pour saut à l’élastique
+3003,Parcours Acrobatique en Hauteur/Site d'accrobranche
+3004,Parcours de chasse / en campagne
+3005,Parcours fixe de course d’orientation
+3006,Piste de pulka / traineau à chiens
+3007,Site d'escalade en falaise
+3008,Site de spéléologie sportive et/ou éducative
+3009,Site de char à voile
+3010,Via ferrata / Via corda
+3011,Refuge de montagne
+3012,Boucle de randonnée
+3013,Cascade de glace
+3014,Site de blocs d'escalade
+3015,Espace de pratique spéléologique
+3101,Arènes
+3104,Club de plage
+3106,Salle de spectacle / Zenith
+3107,Hippodrome
+3108,Simulateur de chute libre
