@@ -23,6 +23,9 @@ write_sas(data = donnees_pour_sas, "C:/Users/Khaled/Documents/1A/Statistique des
 
 
 #Tables pour format
-donnees_en_ligne[Type !="Nombre d'équipements sportifs",
+libelle_activite <- donnees_en_ligne[Type !="Nombre d'équipements sportifs",
                  .("Numero" = substr(Type,1,4),"Libelle" = substr(Type, start = 8, stop = 1000000L))]
 
+libelle_activite <- unique(libelle_activite)
+
+fwrite(x= libelle_activite, "C:/Users/Khaled/Documents/1A/Statistique descriptive/TP 3/Source temporaire/libelle_activite.csv")
