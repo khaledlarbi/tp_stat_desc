@@ -1,0 +1,607 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,amsfonts,graphicx,dsfont,latexsym,stmaryrd,fancyhdr,textpos,eurosym,mathrsfs,enumerate}
+%\usepackage[ansinew]{inputenc}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[margin=3cm]{geometry}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\xb}{\bar x}
+\newcommand{\sbt}{\tiny{\textrm{$\bullet$}}}
+\newcommand{\gx}{\mathbf X}
+\newcommand{\un}{\mathds 1}
+\newcommand{\Perp}{\perp \! \! \! \perp}
+\parindent0cm
+
+\begin{document}
+
+
+ENSAI \qquad \qquad \qquad\qquad  \qquad Statistiques descriptives \qquad \qquad \qquad \qquad \qquad 2019-2020
+
+1\`{e}re Ann\'{e}e
+
+\bigskip
+
+\begin{center}
+{\Large \medskip TD 2 : Statistiques bivariées}
+\end{center}
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%\newpage
+\section{Décomposition de la variance}
+
+\noindent On considère un caractère quantitatif $X$ et un caractère qualitatif $Y$ à $p$ modalités.
+
+\noindent On notera :
+\begin{itemize}
+  \item $n_i$ l'effectif du groupe $i$ (individus tels que $y_k=i$),
+  \item $n$ l'effectif total,
+  \item $\bar{x_i}$ la moyenne du caractère $X$ calculée sur le groupe $i$ (qu'on appellera moyenne conditionnelle du groupe $i$ pour le caractère $X$),
+  \item $\bar{x}$ la moyenne du caractère $X$.
+  \item $\sigma_{i}^2(X)$ la variance du caractère $X$ calculée sur le groupe $i$ (qu'on appellera variance conditionnelle du groupe $i$ pour le caractère $X$),
+  \item $\sigma^2(X)$ la variance du caractère $X$.
+\end{itemize}
+
+\bigskip
+\begin{enumerate}
+  \item Exprimer $n$ en fonction des $n_i$.
+  
+ % \hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4.1cm}
+
+  \item Rappeler l'expression de $\bar{x_i}$ et $\bar{x}$, puis de $\sigma_{i}^2$ et $\sigma_{i}^2$.
+  
+%\bigskip  
+ % \hspace{-1.5cm} \textbf{$\bar{x_i}=$}
+%\vspace{1.5cm}
+
+ % \hspace{-1.5cm} \textbf{$\bar{x}$=}
+%\vspace{1.5cm}
+
+  
+ % \hspace{-1.5cm} \textbf{$\sigma_{x_i}^2$=}
+%\vspace{1.5cm}
+
+  %\hspace{-1.5cm} \textbf{$\sigma_{x}^2$=}
+%\vspace{1.5cm}
+
+
+\item Montrer que $\sum_{i=1}^p \sum_{j=1}^{n_i} (x_{i,j}-\bar{x})=0$.
+
+%  \hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{6.1cm}
+
+  \item En déduire que $\sum_{j=1}^{n_i} (x_{i,j}-\bar{x_i})=0$. A-t-on aussi $\sum_{j=1}^{n_i} (x_{i,j}-\bar{x})=0$ ?
+
+%  \hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{6.1cm}  
+  
+ \item Montrer que $\sigma^2(X)$ peut s'écrire comme somme de la moyenne des variances conditionnelles et de la variances des moyennes conditionnelles (attention aux pondérations).
+ 
+   
+%  \hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{10.1cm}
+
+  \end{enumerate}
+  
+ % \newpage
+
+\section{Etude de la répartition de l'offre de soins au sein des régions}
+
+Nous souhaitons étudier l'offre de santé dans les différentes régions de France Métropolitaine en 2013. Nous nous intéressons à deux indicateurs, le nombre de médecins et le nombre de lits d'hopitaux, qui sont disponibles sur le site de l'Insee. 
+
+\medskip
+Nous disposons des variables suivantes :
+\begin{itemize}
+\item Région : \textbf{reg},
+\item Nombre de médecins : \textbf{nbMed},
+\item Nombre de médecins en milliers : \textbf{nbMedM}, sert uniquement dans la Section \ref{sec:concentration},
+\item Nombre de lits d'hopitaux : total \textbf{nbHtot}, dans les hopitaux publics \textbf{nbHpub} et dans les hopitaux privés \textbf{nbHpri}.
+\end{itemize}
+
+\medskip
+Tous les tableaux de données, graphiques et sorties figurent en Annexe. Précisez dans la justification la ou les Tables qui vous ont servi à chaque question.
+
+\subsection{Présentation du jeu de données}
+
+\begin{enumerate}
+\item Pour décrire la population, indiquez
+
+\begin{itemize}
+\item La population étudiée :
+
+%\bigskip
+
+\item L'individu statistique :
+
+%\bigskip
+
+\item[] Donnez un exemple :
+
+%\bigskip
+
+\item La taille de la population :
+\end{itemize}
+\bigskip
+
+\item Pour décrire le jeu de données, indiquez le type des variables :
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+Variable & Quantitative & Qualitative \\ 
+\hline 
+\textbf{reg} &  &  	 \\ 
+\hline 
+\textbf{nbMed} &  &  \\ 
+\hline 
+\textbf{nbMedM} &  &  \\ 
+\hline
+\textbf{nbHtot} &  &  \\ 
+\hline 
+\textbf{nbHpub} &  &  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+ \bigskip
+ 
+\item Quel est le nombre total de lits d'hôpitaux ? Et le nombre total de médecins ?
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4.1cm}
+
+\item La région qui a le moins de médecins correspond-t-elle à celle qui a le moins de lits d'hôpitaux ?
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4.1cm}
+
+
+\item Donnez le ratio nombre de lits par médecin au  niveau de la région Ile de France et sur la Province (définie comme la France métropolitaine privée de l'Ile de France).
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{7.1cm}
+\end{enumerate}
+
+
+
+\subsection{Offre de lits d'hôpitaux et effet secteur}
+
+Dans cette partie, on s'intéresse uniquement aux nombres de lits dans les hôpitaux et à leur répartition entre les secteurs public et privé. Les Tables à remplir sont les Tables \ref{tab:secteur} et \ref{tab:region}.
+
+\bigskip
+\begin{enumerate}
+
+\item Calculez les distributions marginales et complétez les ligne et colonne \textbf{Total} des Tables \ref{tab:secteur} et \ref{tab:region}.
+
+%\hspace{-1.5cm} \textbf{Méthode de calcul :}
+%\vspace{3cm}
+
+
+\item  Calculez (a1) et (a2) dans la Table  \ref{tab:secteur} et donnez l'interprétation de (a2).
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4.1cm}
+
+\item Calculez les autres valeurs manquantes dans les Tables \ref{tab:secteur} et \ref{tab:region}.
+\medskip
+
+%(b1)
+
+%\vspace{1.5cm}
+%\bigskip
+
+%(b2)
+
+%\vspace{1.5cm}
+
+%(b3)
+
+%\vspace{1.5cm}
+
+%(b4)
+
+%\vspace{1.5cm}
+
+\item Quelle est la région qui a le plus de lits dans les hopitaux privés ? Est-ce la même région qui a la plus grande proportion de lits dans les hôpitaux privés ?
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+
+\item Donnez l'interprétation des chiffres en gras dans les Tables \ref{tab:secteur} et \ref{tab:region} (région Bretagne, première colonne).
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{5cm}
+
+\item Comparez la distribution des lits dans le secteur public à la distribution marginale du nombre de lits. Indiquez leurs modes, min, max et donnez une région sur-représentée ainsi qu'une région sous-représentée.
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{5cm}
+
+\item Calculer les coefficients de variation pour les variables \textbf{nbHtot} et \textbf{nbHpub}.
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+
+\item Quelle est la série la plus dispersée ?
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+
+\item Peut-on affirmer que le secteur a un lien avec le nombre de lits ? Appuyez votre réponse sur un indicateur que vous calculerez et dont vous donnerez le nom.
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{8cm}
+
+\end{enumerate}
+
+
+\subsection{Lien entre le nombre de lits et le nombre de médecins}
+
+On étudie maintenant le lien entre le nombre de lits  \textbf{nbHtot} et le nombre de médecins \textbf{nbMedM}.
+
+\bigskip
+\begin{enumerate}
+\item  En observant le nuage de  points (a), dites s'il est justifié de faire la régression linéaire correspondante.
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+
+  \item Ecrivez le modèle de régression associé et donnez une estimation par MCO des paramètres.
+  
+  
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+
+  \item Ecrivez le modèle de régression associé  au nuage de points  (b) et donnez une estimation par MCO des paramètres.
+  
+  
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+
+  \item A partir des valeurs des paramètres calculées dans les 2 questions précédentes, déduisez un indicateur de la qualité d'ajustement dont vous donnerez la définition et l'interprétation.
+  
+  
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+\end{enumerate}
+
+\subsection{Répartition des médecins}
+\label{sec:concentration}
+
+Dans cette partie, on utilise la variable \textbf{nbMedM} avec pour objectif de déterminer si la répartition des médecins sur le sol français est égalitaire.
+
+\bigskip
+\begin{enumerate}
+\item Donnez une représentation graphique de la courbe de Lorenz.
+
+%\hspace{-1.5cm}\textbf{Calculs des coordonnées :}
+%\vspace{2cm}
+
+%\begin{tabular}{|c|c|c|}
+%\hline 
+%\hspace{2cm} & \hspace{2cm} & \hspace{2cm} \\ 
+%\hline 
+% &  & 	 \\ 
+%\hline 
+ %&  &  \\ 
+ %\hline 
+ %&  & 	 \\ 
+%\hline 
+ %&  &  \\ 
+ %\hline 
+ %&  & 	 \\ 
+%\hline 
+ %&  &  \\ 
+ %\hline 
+ %&  & 	 \\ 
+%\hline 
+ %&  &  \\ 
+ %\hline 
+ %&  & 	 \\ 
+%\hline 
+ %&  &  \\ 
+ %\hline 
+ %&  & 	 \\ 
+%\hline 
+% &  &  \\ 
+ %\hline 
+ %&  & 	 \\ 
+%\hline 
+ %&  &  \\ 
+%\hline 
+%\end{tabular} 
+
+%\bigskip
+%\hspace{-1.5cm}\textbf{Représentation graphique:}
+%\vspace{4cm}
+%\begin{figure}[ht]
+%\includegraphics[width=6cm]{grillelorenz.pdf} 
+%\includegraphics[scale=.5]{nuage-ajustement.eps} 
+%\caption{Courbe de Lorenz}
+%\end{figure}
+
+
+\item Calculez l'indice de Gini correspondant. La répartition du nombre de médecins est-elle égalitaire entre les régions ?
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{4cm}
+
+\item Sur la base de cet indicateur, peut-on décider quelles sont les régions où il faudrait augmenter le nombre de médecins ? Si non, quelle information supplémentaire est à utiliser ?
+
+%\hspace{-1.5cm} \textbf{Réponse :}
+%\vspace{6cm}
+
+
+\end{enumerate}
+
+
+\section{Indices}
+
+
+Un indice de Laspeyres des prix à la consommation est obtenu à partir de trois groupes de produits dont on donne les pondéralions (ou coefficients budgétaires) dans le tableau suivant
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+Type de produit & Pondération \\
+\hline
+  &  \\
+Alimenlation  & 2 516 \\
+Produits manufacturés & 4 438 \\
+Services & 3 046 \\
+  &  \\
+\hline
+ 
+\end{tabular}
+\end{center}
+\begin{enumerate}
+\item Au cours de l'année, les prix de l'alimentalion augmentent de 2,5\%, ceux des produits manufacturés de 0,2\% et ceux des services de 4,6 \%. Déterminer la hausse globale des prix à la consommation au cours de l'année.
+\item 0n suppose que, l'année suivante, les prix de l'alimenlation croissent de 1 \%, ceux des produits manufacturés baissent
+de 2\% et ceux des services croissent de 3\%. Déterminer l'évolution globale des prix pendant la seconde année, en utilisant les mêmespondérations que précédemment.
+\item Déterminer l'évolulion globale des prix sur l'ensemble des deux années. 
+\end{enumerate}
+\vspace{0.4cm}
+%Remarque : Cette évolution globale ne recalcule pas les pondérations, or sur des périodes plus longues cette hypothèse d'égalité des pondérations est plus contestable car les habitudes de consommation évoluent. Cela rend plus difficile le calcul d'un indice global de consommation. Noter aussi que ces pondérations vont fortement varier selon les individus, de telle sorte que l'indice des prix peut varier selon le revenu ou d'autres variables. L'INSEE calcule d'ailleurs des indices des prix selon la PCS, la tranche de revenu... Pour évaluer son indice personnalisé des prix, on pourra se rendre sur le site
+
+%\url{https://www.insee.fr/fr/statistiques?debut=0&idprec=2418131&theme=80&categorie=19}.
+
+
+\newpage
+
+\section*{Annexe}
+\begin{table}[ht]
+
+\begin{tabular}{|c||c|c|c||c|c|}
+\hline 
+\textbf{Reg}&\textbf{nbHtot}&\textbf{nbHpub}&\textbf{nbHpri}&\textbf{nbMed}&\textbf{nbMedM}\\ \hline \hline
+
+Alsace&7 930&5 438&2 492&6 533&7\\ \hline
+
+Aquitaine&14 079&8 011&6 068&11 551&12\\ \hline
+
+Auvergne&5 932&4 117&1 815&4 121&4\\ \hline
+
+Bourgogne&7 464&5 169&2 295&4 758&5\\ \hline
+
+Bretagne&13 090&8 784&4 306&10 061&10\\ \hline
+
+Centre&9 997&6 624&3 373&6 835&7\\ \hline
+
+Champagne-Ardenne&6 274&4 040&2 234&3 773&4\\ \hline
+
+Corse&1 192&657&535&941&1\\ \hline
+
+Franche-Comté&4 770&3 786&984&3 571&4\\ \hline
+
+Île-de-France&46 343&27 715&18 628&47 491&47\\ \hline
+
+Languedoc-Roussillon&10 803&5 991&4 812&9 845&10\\ \hline
+
+Limousin&3 794&2 634&1 160&2 524&3\\ \hline
+
+Lorraine&10 176&6 478&3 698&7 166&7\\ \hline
+
+Midi-Pyrénées&10 903&6 411&4 492&10 151&10\\ \hline
+
+Nord-Pas-de-Calais&17 509&10 304&7 205&12 491&12\\ \hline
+
+Basse-Normandie&6 658&5 004&1 654&4 301&4\\ \hline
+
+Haute-Normandie&6 576&4 365&2 211&5 060&5\\ \hline
+
+Pays de la Loire&13 224&8 194&5 030&10 224&10\\ \hline
+
+Picardie&7 427&5 669&1 758&4 959&5\\ \hline
+
+Poitou-Charentes&6 791&5 028&1 763&5 267&5\\ \hline
+
+Provence-Alpes-Côte d'Azur&21 428&11 624&9 804&20 172&20\\ \hline
+
+Rhône-Alpes&25 256&16 434&8 822&21 432&21\\ \hline \hline
+
+\textbf{France métropolitaine}&\textbf{257 616}&\textbf{162 477}&\textbf{95 139}&\textbf{213 227}&\textbf{213} \\
+\hline 
+\end{tabular} 
+\caption{Données du problème. Source : Insee.}
+%\end{table}
+%
+%
+%\begin{table}
+\bigskip
+\begin{center}
+\begin{tabular}{|c||c|c|c|c|}
+\hline 
+Variable  & nbHtot &nbHpub  & nbHpri&  nbMed  \\ 
+\hline \hline      
+Min  &  1192  &   657  &  535  &   941    \\ 
+\hline 
+Médiane &  9997  &  5991  &  3373  &  6835  \\ 
+\hline 
+Moyenne  &  22401 & 14128 & 8273 &  18541  \\ 
+\hline  
+Max  & 257616 & 162477 & 95139 & 213227  \\ 
+\hline 
+Ecart-type &52127.22 & 32801.93 & 19347.73 & 43529.78 \\ 
+\hline 
+\end{tabular} 
+\caption{Statistiques descriptives}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{nbMedM}&\textbf{Effectif}\\ \hline \hline
+
+1&1\\ \hline
+
+3&1\\ \hline
+
+4&4\\ \hline
+
+5&4\\ \hline
+
+7&3\\ \hline
+
+10&4\\ \hline
+
+12&2\\ \hline
+
+20&1\\ \hline
+
+21&1\\ \hline
+
+47&1\\ \hline
+\end{tabular} 
+\caption{Répartition des régions en fonction du nombre de médecins (en milliers). Source : Insee}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c||c|c|}
+\hline 
+\textbf{Reg}& \textbf{Public}& \textbf{Privé}\\ \hline \hline
+
+Alsace&(a1)&(a2)\\ \hline
+
+Aquitaine&57$\%$&43$\%$\\ \hline
+
+Auvergne&69$\%$&31$\%$\\ \hline
+
+Bourgogne&69$\%$&31$\%$\\ \hline
+
+Bretagne&{\large \textbf{67}$\%$}&33$\%$\\ \hline
+
+Centre&66$\%$&34$\%$\\ \hline
+
+Champagne-Ardenne&64$\%$&36$\%$\\ \hline
+
+Corse&55$\%$&45$\%$\\ \hline
+
+Franche-Comté&79$\%$&21$\%$\\ \hline
+
+Île-de-France&(b1)&40$\%$\\ \hline
+Languedoc-Roussillon&55$\%$&45$\%$\\ \hline
+
+Limousin&69$\%$&31$\%$\\ \hline
+
+Lorraine&64$\%$&36$\%$\\ \hline
+
+Midi-Pyrénées&59$\%$&41$\%$\\ \hline
+
+Nord-Pas-de-Calais&59$\%$&41$\%$\\ \hline
+
+Basse-Normandie&75$\%$&(b2)\\ \hline
+
+Haute-Normandie&66$\%$&34$\%$\\ \hline
+
+Pays de la Loire&62$\%$&38$\%$\\ \hline
+
+Picardie&76$\%$&24$\%$\\ \hline
+
+Poitou-Charentes&74$\%$&26$\%$\\ \hline
+
+Provence-Alpes-Côte d'Azur&54$\%$&46$\%$\\ \hline
+Rhône-Alpes&65$\%$&35$\%$\\ \hline \hline
+
+\textbf{Total} & &\\ \hline
+\end{tabular} 
+\caption{Répartion des hopitaux par type de secteur dans chaque région.}
+\label{tab:secteur}
+\end{center}
+\end{table}
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{|c||c|c||c|}
+\hline
+\textbf{Reg}&\textbf{Public}& \textbf{Privé} & \textbf{Total}\\ \hline \hline
+
+Alsace&3$\%$&3$\%$&\\ \hline
+
+Aquitaine&5$\%$&6$\%$&\\ \hline
+
+Auvergne&3$\%$&2$\%$&\\ \hline
+
+Bourgogne&3$\%$&2$\%$&\\ \hline
+
+Bretagne&{\large \textbf{5}$\%$}&5$\%$&\\ \hline
+
+Centre&4$\%$&4$\%$&\\ \hline
+
+Champagne-Ardenne&2$\%$&2$\%$&\\ \hline
+
+Corse&0$\%$&1$\%$&\\ \hline
+
+Franche-Comté&2$\%$&1$\%$&\\ \hline
+
+Île-de-France&17$\%$&20$\%$&\\ \hline
+
+Languedoc-Roussillon&4$\%$&5$\%$&\\ \hline
+
+Limousin&(b3)&1$\%$&\\ \hline
+
+Lorraine&4$\%$&4$\%$&\\ \hline
+
+Midi-Pyrénées&4$\%$&5$\%$&\\ \hline
+
+Nord-Pas-de-Calais&6$\%$&8$\%$&\\ \hline
+
+Basse-Normandie&3$\%$&2$\%$&\\ \hline
+
+Haute-Normandie&3$\%$&2$\%$&\\ \hline
+
+Pays de la Loire&5$\%$&5$\%$&\\ \hline
+
+Picardie&3$\%$&2$\%$&\\ \hline
+
+Poitou-Charentes&3$\%$&2$\%$&\\ \hline
+
+Provence-Alpes-Côte d'Azur&7$\%$&(b4)&\\ \hline
+
+Rhône-Alpes&10$\%$&9$\%$&\\ \hline
+\end{tabular} 
+\caption{Répartion des lits par région dans les hopitaux publics et privés.}
+\label{tab:region}
+\end{center}
+\end{table}
+
+\begin{figure}
+\includegraphics[scale=0.8, angle=-90]{nuageexam2014.eps} 
+\caption{Nuages de points}
+\end{figure}
+\end{document}
